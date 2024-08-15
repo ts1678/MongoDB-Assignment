@@ -1,0 +1,362 @@
+[
+  {
+    "team_num": 6168,
+    "match_num": 1,
+    "climbed": true,
+    "num_balls": 4
+  },
+  {
+    "team_num": 4499,
+    "match_num": 1,
+    "climbed": true,
+    "num_balls": 3
+  },
+  {
+    "team_num": 429,
+    "match_num": 1,
+    "climbed": false,
+    "num_balls": 3
+  },
+  {
+    "team_num": 7650,
+    "match_num": 1,
+    "climbed": false,
+    "num_balls": 5
+  },
+  {
+    "team_num": 2464,
+    "match_num": 1,
+    "climbed": true,
+    "num_balls": 15
+  },
+  {
+    "team_num": 6068,
+    "match_num": 1,
+    "climbed": true,
+    "num_balls": 2
+  },
+  {
+    "team_num": 6168,
+    "match_num": 2,
+    "climbed": false,
+    "num_balls": 13
+  },
+  {
+    "team_num": 4499,
+    "match_num": 2,
+    "climbed": false,
+    "num_balls": 2
+  },
+  {
+    "team_num": 429,
+    "match_num": 2,
+    "climbed": false,
+    "num_balls": 1
+  },
+  {
+    "team_num": 7650,
+    "match_num": 2,
+    "climbed": false,
+    "num_balls": 1
+  },
+  {
+    "team_num": 2464,
+    "match_num": 2,
+    "climbed": false,
+    "num_balls": 13
+  },
+  {
+    "team_num": 6068,
+    "match_num": 2,
+    "climbed": false,
+    "num_balls": 0
+  },
+  {
+    "team_num": 6168,
+    "match_num": 3,
+    "climbed": false,
+    "num_balls": 1
+  },
+  {
+    "team_num": 4499,
+    "match_num": 3,
+    "climbed": false,
+    "num_balls": 9
+  },
+  {
+    "team_num": 429,
+    "match_num": 3,
+    "climbed": false,
+    "num_balls": 3
+  },
+  {
+    "team_num": 7650,
+    "match_num": 3,
+    "climbed": false,
+    "num_balls": 7
+  },
+  {
+    "team_num": 2464,
+    "match_num": 3,
+    "climbed": true,
+    "num_balls": 13
+  },
+  {
+    "team_num": 6068,
+    "match_num": 3,
+    "climbed": true,
+    "num_balls": 11
+  },
+  {
+    "team_num": 6168,
+    "match_num": 4,
+    "climbed": true,
+    "num_balls": 14
+  },
+  {
+    "team_num": 4499,
+    "match_num": 4,
+    "climbed": true,
+    "num_balls": 8
+  },
+  {
+    "team_num": 429,
+    "match_num": 4,
+    "climbed": false,
+    "num_balls": 2
+  },
+  {
+    "team_num": 7650,
+    "match_num": 4,
+    "climbed": true,
+    "num_balls": 4
+  },
+  {
+    "team_num": 2464,
+    "match_num": 4,
+    "climbed": true,
+    "num_balls": 9
+  },
+  {
+    "team_num": 6068,
+    "match_num": 4,
+    "climbed": true,
+    "num_balls": 10
+  },
+  {
+    "team_num": 6168,
+    "match_num": 5,
+    "climbed": false,
+    "num_balls": 13
+  },
+  {
+    "team_num": 4499,
+    "match_num": 5,
+    "climbed": false,
+    "num_balls": 8
+  },
+  {
+    "team_num": 429,
+    "match_num": 5,
+    "climbed": false,
+    "num_balls": 2
+  },
+  {
+    "team_num": 7650,
+    "match_num": 5,
+    "climbed": false,
+    "num_balls": 2
+  },
+  {
+    "team_num": 2464,
+    "match_num": 5,
+    "climbed": false,
+    "num_balls": 0
+  },
+  {
+    "team_num": 6068,
+    "match_num": 5,
+    "climbed": false,
+    "num_balls": 15
+  },
+  {
+    "team_num": 6168,
+    "match_num": 6,
+    "climbed": false,
+    "num_balls": 0
+  },
+  {
+    "team_num": 4499,
+    "match_num": 6,
+    "climbed": true,
+    "num_balls": 10
+  },
+  {
+    "team_num": 429,
+    "match_num": 6,
+    "climbed": false,
+    "num_balls": 13
+  },
+  {
+    "team_num": 7650,
+    "match_num": 6,
+    "climbed": false,
+    "num_balls": 1
+  },
+  {
+    "team_num": 2464,
+    "match_num": 6,
+    "climbed": true,
+    "num_balls": 11
+  },
+  {
+    "team_num": 6068,
+    "match_num": 6,
+    "climbed": true,
+    "num_balls": 8
+  },
+  {
+    "team_num": 6168,
+    "match_num": 7,
+    "climbed": true,
+    "num_balls": 12
+  },
+  {
+    "team_num": 4499,
+    "match_num": 7,
+    "climbed": true,
+    "num_balls": 15
+  },
+  {
+    "team_num": 429,
+    "match_num": 7,
+    "climbed": false,
+    "num_balls": 0
+  },
+  {
+    "team_num": 7650,
+    "match_num": 7,
+    "climbed": true,
+    "num_balls": 6
+  },
+  {
+    "team_num": 2464,
+    "match_num": 7,
+    "climbed": true,
+    "num_balls": 7
+  },
+  {
+    "team_num": 6068,
+    "match_num": 7,
+    "climbed": false,
+    "num_balls": 5
+  },
+  {
+    "team_num": 6168,
+    "match_num": 8,
+    "climbed": false,
+    "num_balls": 15
+  },
+  {
+    "team_num": 4499,
+    "match_num": 8,
+    "climbed": false,
+    "num_balls": 4
+  },
+  {
+    "team_num": 429,
+    "match_num": 8,
+    "climbed": true,
+    "num_balls": 8
+  },
+  {
+    "team_num": 7650,
+    "match_num": 8,
+    "climbed": false,
+    "num_balls": 8
+  },
+  {
+    "team_num": 2464,
+    "match_num": 8,
+    "climbed": true,
+    "num_balls": 13
+  },
+  {
+    "team_num": 6068,
+    "match_num": 8,
+    "climbed": false,
+    "num_balls": 13
+  },
+  {
+    "team_num": 6168,
+    "match_num": 9,
+    "climbed": false,
+    "num_balls": 10
+  },
+  {
+    "team_num": 4499,
+    "match_num": 9,
+    "climbed": true,
+    "num_balls": 13
+  },
+  {
+    "team_num": 429,
+    "match_num": 9,
+    "climbed": true,
+    "num_balls": 1
+  },
+  {
+    "team_num": 7650,
+    "match_num": 9,
+    "climbed": true,
+    "num_balls": 14
+  },
+  {
+    "team_num": 2464,
+    "match_num": 9,
+    "climbed": false,
+    "num_balls": 9
+  },
+  {
+    "team_num": 6068,
+    "match_num": 9,
+    "climbed": false,
+    "num_balls": 4
+  },
+  {
+    "team_num": 6168,
+    "match_num": 10,
+    "climbed": false,
+    "num_balls": 5
+  },
+  {
+    "team_num": 4499,
+    "match_num": 10,
+    "climbed": false,
+    "num_balls": 12
+  },
+  {
+    "team_num": 429,
+    "match_num": 10,
+    "climbed": true,
+    "num_balls": 14
+  },
+  {
+    "team_num": 7650,
+    "match_num": 10,
+    "climbed": false,
+    "num_balls": 8
+  },
+  {
+    "team_num": 2464,
+    "match_num": 10,
+    "climbed": true,
+    "num_balls": 1
+  },
+  {
+    "team_num": 6068,
+    "match_num": 10,
+    "climbed": false,
+    "num_balls": 11
+  }
+]
