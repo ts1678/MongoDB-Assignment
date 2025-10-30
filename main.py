@@ -1,12 +1,12 @@
 import pymongo
 import yaml
 import json
+from warnings import warn
 
 client = pymongo.MongoClient("localhost" , 27017)
 
 db = client["tim_data"]
 
-# there's probably a better way to do this
 db.team_collection.drop()
 db.results_collection.drop()
 
@@ -15,13 +15,16 @@ res = db["results_collection"]
 
 unique_teams = []
 
-with open("example_tim_data.json") as f:
-    data = json.load(f)
-    with open("example_tim_data.yaml", "r") as y:
-        yaml_data = yaml.load(y, yaml.Loader)
-        for i in data:
-            for j in i:
-                if type(i[j]).__name__ != yaml_data[j]:
+with open("example_tim_data.json", "r") as tim_data_file:
+    data = json.load(tim_data_file)
+    with open("example_tim_data.yaml", "r") as tim_yaml_file:
+        yaml_data = yaml.load(tim_yaml_file, yaml.Loader)
+        for tim_element in data:
+            for key in tim_element:
+                if key not in yaml_data:
+                    warn("The Key from the TIM data is not in the YAML!")
+                    continue
+                if type(tim_element[key]).__name__ != yaml_data[key]:
                     raise ValueError
     col.insert_many(data)
 
