@@ -13,8 +13,6 @@ db.results_collection.drop()
 col = db["team_collection"]
 res = db["results_collection"]
 
-unique_teams = []
-
 with open("example_tim_data.json", "r") as tim_data_file:
     data = json.load(tim_data_file)
     with open("example_tim_data.yaml", "r") as tim_yaml_file:
@@ -28,12 +26,14 @@ with open("example_tim_data.json", "r") as tim_data_file:
                     raise ValueError
     col.insert_many(data)
 
+unique_teams = []
+
 for doc in col.find():
     if not doc['team_num'] in unique_teams:
         unique_teams.append(doc['team_num'])
 
 for team in unique_teams:
-    this_match_count = 0 # these variables will all be incorrect until their final operations are done at the end
+    this_match_count = 0
     most_balls_scored = 0
     least_balls_scored = 0
     average_balls_scored = 0
