@@ -1,0 +1,4 @@
+team_num: int
+match_num: int
+climbed: bool
+num_balls: int

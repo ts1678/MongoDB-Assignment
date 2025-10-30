@@ -1,4 +1,5 @@
 import pymongo
+import yaml
 import json
 
 client = pymongo.MongoClient("localhost" , 27017)
@@ -16,6 +17,12 @@ unique_teams = []
 
 with open("example_tim_data.json") as f:
     data = json.load(f)
+    with open("example_tim_data.yaml", "r") as y:
+        yaml_data = yaml.load(y, yaml.Loader)
+        for i in data:
+            for j in i:
+                if type(i[j]).__name__ != yaml_data[j]:
+                    raise ValueError
     col.insert_many(data)
 
 for doc in col.find():
