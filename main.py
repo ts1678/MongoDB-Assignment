@@ -26,6 +26,34 @@ with open("example_tim_data.json", "r") as tim_data_file:
                     raise ValueError
     col.insert_many(data)
 
+
+team_results = {}
+
+for team_match in col.find():
+    if team_match["team_num"] not in team_results:
+        team_results[team_match["team_num"]]["matches_played"] = 0
+        team_results[team_match["team_num"]]["balls_scored"] = 0
+        team_results[team_match["team_num"]]["least_balls_scored"] = team_match["team_num"]["balls_scored"]
+        team_results[team_match["team_num"]]["most_balls_scored"] = team_match["team_num"]["balls_scored"]
+        team_results[team_match["team_num"]]["successful_climbs"] = 0
+    team_results[team_match["team_num"]]["matches_played"] += 1
+    team_results[team_match["team_num"]]["balls_scored"] += team_match["balls_scored"]
+    team_results[team_match["team_num"]]["least_balls_scored"] = min(team_results[team_match["team_num"]]["least_balls_scored"], team_match["team_num"]["balls_scored"])
+    team_results[team_match["team_num"]]["most_balls_scored"] = max(team_results[team_match["team_num"]]["most_balls_scored"], team_match["team_num"]["balls_scored"])
+    team_results[team_match["team_num"]]["successful_climbs"] += team_match["team_num"]["climbed"]
+
+for team in team_results:
+    res.insert_one({"team_number:": team,
+                    "average_balls_scored": team["balls_scored"] / team["matches_played"],
+                    "least_balls_scored": team["least_balls_scored"],
+                    "most_balls_scored": team["most_balls_scored"],
+                    "percent_climb_success": team["successful_climbs"] / team["matches"]
+                    })
+
+
+
+
+"""
 unique_teams = []
 
 for doc in col.find():
@@ -52,3 +80,5 @@ for team in unique_teams:
         "most_balls_scored": most_balls_scored,
         "number_of_matches_played": this_match_count,
         "percent_climb_success": percent_climb_success/this_match_count})
+"""
+
